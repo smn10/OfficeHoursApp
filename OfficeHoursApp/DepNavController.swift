@@ -14,9 +14,7 @@ class DepNavController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Departments"; /// Doesnt like @"Departments"
     }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

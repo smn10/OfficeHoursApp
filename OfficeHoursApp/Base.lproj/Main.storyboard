@@ -26,6 +26,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" staticText="YES"/>
+                                </accessibility>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -33,11 +36,11 @@
                             <outlet property="delegate" destination="FMk-rY-K2C" id="aU1-RM-dIP"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="MGZ-b2-mCD"/>
+                    <navigationItem key="navigationItem" title="Departments" id="MGZ-b2-mCD"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k72-GI-gxS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2722" y="-111"/>
+            <point key="canvasLocation" x="1338" y="1473"/>
         </scene>
         <!--Departments-->
         <scene sceneID="uda-tl-Z86">
@@ -59,7 +62,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HUN-Lq-6le" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1910" y="-111"/>
+            <point key="canvasLocation" x="350" y="1473"/>
         </scene>
     </scenes>
 </document>
