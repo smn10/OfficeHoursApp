@@ -9,10 +9,10 @@
 import Foundation
 import UIKit
 
-class DepViewController: UITableViewController {
+class DepViewController: UITableViewController, UINavigationControllerDelegate {
     var department = [
-        Department(name: "Computer Science", courses: ["101", "110", "121", "210"]),
-        Department(name: "Mathematics", courses: ["100", "101", "102", "103"])
+        Department(name: "Computer Science", courses: [Course(name:"101"), Course(name:"110")]),
+        Department(name: "Mathematics", courses: [Course(name:"100"), Course(name:"101")])
     ]
     
     
@@ -27,6 +27,11 @@ class DepViewController: UITableViewController {
         cell.textLabel?.text = item.name
         return cell
      }
+//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        let courses = department[indexPath.row].getCourses()
+//        courses.delegate = self
+//        presentViewController(courses, animated:true, completion: nil)
+//    }
     
 
 }

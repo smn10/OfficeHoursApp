@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Instructor {
+class Instructor: NSObject {
     let name: String
     let isProf: Bool
     let office: String

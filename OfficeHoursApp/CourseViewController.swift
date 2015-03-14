@@ -11,22 +11,21 @@ import UIKit
 
 
 class CourseViewController: UITableViewController {
-    var math = ["100", "101", "102"]
+    var courses = [Course(name:"100"),
+        Course (name: "101"),
+        Course (name: "102")]
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return math.count
+        return courses.count
     }
     
+    @IBAction func back(sender: AnyObject) {
+      dismissViewControllerAnimated(true, completion: nil)
+    }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("CourseViewCell", forIndexPath: indexPath) as UITableViewCell
-        
-        for i in 1...math.count{
-            let item = math[indexPath.row]
-            cell.textLabel?.text = item.name
-            
-        }
-        
+        let item = courses[indexPath.row]
+        cell.textLabel?.text = item.name
         return cell
-        
     }
 }

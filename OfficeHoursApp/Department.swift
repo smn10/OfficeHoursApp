@@ -8,15 +8,19 @@
 
 import Foundation
 
-class Department {
+class Department: NSObject {
     let name: String
     //let building: String
-    var courses: [String]
+    var courses: [Course]
     //var courses: [Course]
     
-    init (name: String, courses:[String]) {
+    init (name: String, courses:[Course]) {
         self.name = name
       //  self.building = building
         self.courses = courses
+    }
+    
+    func getCourses() -> [Course]{
+    return self.courses
     }
 }
