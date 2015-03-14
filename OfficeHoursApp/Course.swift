@@ -9,11 +9,11 @@
 import Foundation
 
 class Course {
-    let code: Int
-    var instructors: [Instructor]
+    let name: String
+    //var instructors: [Instructor]
     
-    init (code: Int, instructors:[Instructor]) {
-        self.code = code
-        self.instructors = instructors
+    init (name: String) {
+        self.name = name
+        //self.instructors = instructors
     }
 }

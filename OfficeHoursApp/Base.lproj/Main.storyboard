@@ -8,7 +8,7 @@
         <scene sceneID="DvM-0q-H1O">
             <objects>
                 <tableViewController id="FMk-rY-K2C" userLabel="DepViewController" customClass="DepViewController" customModule="OfficeHoursApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="dZG-3T-1Ob">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="45" sectionHeaderHeight="22" sectionFooterHeight="22" id="dZG-3T-1Ob">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -36,23 +36,58 @@
                             <outlet property="delegate" destination="FMk-rY-K2C" id="aU1-RM-dIP"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Departments" id="MGZ-b2-mCD"/>
+                    <navigationItem key="navigationItem" title="Departments" id="MGZ-b2-mCD">
+                        <attributedString key="userComments">
+                            <fragment content="hghghg">
+                                <attributes>
+                                    <font key="NSFont" metaFont="smallSystem"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k72-GI-gxS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1338" y="1473"/>
+            <point key="canvasLocation" x="34" y="-1215"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="TwZ-OP-k4a">
+            <objects>
+                <tableViewController id="vJn-sE-jiC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="gMf-fo-mgs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Zwl-5H-spZ">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zwl-5H-spZ" id="YA2-dC-RH3">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vJn-sE-jiC" id="1fl-gP-I3D"/>
+                            <outlet property="delegate" destination="vJn-sE-jiC" id="qCK-ru-aec"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IB2-ng-XrO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="78" y="-503"/>
         </scene>
         <!--Departments-->
         <scene sceneID="uda-tl-Z86">
             <objects>
                 <navigationController title="Departments" automaticallyAdjustsScrollViewInsets="NO" id="T3H-n2-xov" customClass="DepNavController" customModule="OfficeHoursApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="lOb-1V-q1A"/>
+                    <tabBarItem key="tabBarItem" title="Hello" id="lOb-1V-q1A"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" alpha="0.0" contentMode="scaleToFill" id="HCm-Ci-hY1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -62,7 +97,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HUN-Lq-6le" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="350" y="1473"/>
+            <point key="canvasLocation" x="-985" y="-1239"/>
         </scene>
     </scenes>
 </document>

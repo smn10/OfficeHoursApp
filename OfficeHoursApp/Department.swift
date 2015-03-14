@@ -11,12 +11,12 @@ import Foundation
 class Department {
     let name: String
     //let building: String
-    //var courses: String = ["210", "221", "213"]
+    var courses: [String]
     //var courses: [Course]
     
-    init (name: String) {
+    init (name: String, courses:[String]) {
         self.name = name
       //  self.building = building
-        //self.courses = courses
+        self.courses = courses
     }
 }

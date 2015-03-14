@@ -11,9 +11,11 @@ import UIKit
 
 class DepViewController: UITableViewController {
     var department = [
-        Department(name: "CPSC"),
-        Department(name: "MATH")
+        Department(name: "Computer Science", courses: ["101", "110", "121", "210"]),
+        Department(name: "Mathematics", courses: ["100", "101", "102", "103"])
     ]
+    
+    
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return department.count
