@@ -12,7 +12,7 @@ class Course {
     let code: Int
     var instructors: [Instructor]
     
-    init (code: int, instructors:[Instructor]) {
+    init (code: Int, instructors:[Instructor]) {
         self.code = code
         self.instructors = instructors
     }
