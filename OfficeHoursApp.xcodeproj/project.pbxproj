@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1843E4C81AB40EBA0078A223 /* DepNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843E4C71AB40EBA0078A223 /* DepNavController.swift */; };
 		1843E4CA1AB4B9310078A223 /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843E4C91AB4B9310078A223 /* CourseViewController.swift */; };
+		1843E4CC1AB4EAA50078A223 /* DepartmentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843E4CB1AB4EAA50078A223 /* DepartmentList.swift */; };
 		185390691AB3FD8E003F4FA9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185390681AB3FD8E003F4FA9 /* UIKit.framework */; };
 		2FA4D5781AB3DCA300E1D326 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA4D5771AB3DCA300E1D326 /* AppDelegate.swift */; };
 		2FA4D57A1AB3DCA300E1D326 /* DepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA4D5791AB3DCA300E1D326 /* DepViewController.swift */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		1843E4C71AB40EBA0078A223 /* DepNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepNavController.swift; sourceTree = "<group>"; };
 		1843E4C91AB4B9310078A223 /* CourseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
+		1843E4CB1AB4EAA50078A223 /* DepartmentList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartmentList.swift; sourceTree = "<group>"; };
 		185390681AB3FD8E003F4FA9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2FA4D5721AB3DCA300E1D326 /* OfficeHoursApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OfficeHoursApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA4D5761AB3DCA300E1D326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				2FA4D5801AB3DCA300E1D326 /* LaunchScreen.xib */,
 				2FA4D5751AB3DCA300E1D326 /* Supporting Files */,
 				2FA4D5971AB3EC6100E1D326 /* Department.swift */,
+				1843E4CB1AB4EAA50078A223 /* DepartmentList.swift */,
 				2FA4D59D1AB3ED2A00E1D326 /* Course.swift */,
 				2FA4D59F1AB3EDAB00E1D326 /* Instructor.swift */,
 			);
@@ -239,6 +242,7 @@
 				2FA4D5A01AB3EDAB00E1D326 /* Instructor.swift in Sources */,
 				2FA4D5981AB3EC6100E1D326 /* Department.swift in Sources */,
 				1843E4CA1AB4B9310078A223 /* CourseViewController.swift in Sources */,
+				1843E4CC1AB4EAA50078A223 /* DepartmentList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

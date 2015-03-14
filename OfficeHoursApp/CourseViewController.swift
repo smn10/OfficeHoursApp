@@ -11,9 +11,8 @@ import UIKit
 
 
 class CourseViewController: UITableViewController {
-    var courses = [Course(name:"100"),
-        Course (name: "101"),
-        Course (name: "102")]
+    var department:String = ""
+    var courses = department.getCourses()
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return courses.count
@@ -25,7 +24,7 @@ class CourseViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("CourseViewCell", forIndexPath: indexPath) as UITableViewCell
         let item = courses[indexPath.row]
-        cell.textLabel?.text = item.name
+        cell.textLabel?.text = String(item.code)
         return cell
     }
 }

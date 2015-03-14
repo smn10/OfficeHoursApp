@@ -29,6 +29,9 @@
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" staticText="YES"/>
                                 </accessibility>
+                                <connections>
+                                    <segue destination="Iev-3j-ZDe" kind="show" identifier="DepPressedSegue" id="1wc-LA-QRF"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -46,10 +49,13 @@
                             </fragment>
                         </attributedString>
                     </navigationItem>
+                    <connections>
+                        <outlet property="depTableView" destination="dZG-3T-1Ob" id="Llr-TT-guZ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k72-GI-gxS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2810" y="321"/>
+            <point key="canvasLocation" x="2704" y="285"/>
         </scene>
         <!--Courses-->
         <scene sceneID="TwZ-OP-k4a">

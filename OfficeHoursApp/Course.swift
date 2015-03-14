@@ -9,11 +9,11 @@
 import Foundation
 
 class Course: NSObject {
-    let name: String
+    let code: Int
     //var instructors: [Instructor]
     
-    init (name: String) {
-        self.name = name
+    init (code: Int) {
+        self.code = code
         //self.instructors = instructors
     }
 }

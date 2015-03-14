@@ -10,10 +10,15 @@ import Foundation
 import UIKit
 
 class DepViewController: UITableViewController, UINavigationControllerDelegate {
+    
+    
+    
     var department = [
-        Department(name: "Computer Science", courses: [Course(name:"101"), Course(name:"110")]),
-        Department(name: "Mathematics", courses: [Course(name:"100"), Course(name:"101")])
+        Department(name: "Computer Science", courses: [Course(code:101), Course(code: 110)]),
+        Department(name: "Mathematics", courses: [Course(code:100), Course(code:101)])
     ]
+    
+    @IBOutlet var depTableView: UITableView!
     
     
     
@@ -27,11 +32,32 @@ class DepViewController: UITableViewController, UINavigationControllerDelegate {
         cell.textLabel?.text = item.name
         return cell
      }
-//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        let courses = department[indexPath.row].getCourses()
-//        courses.delegate = self
-//        presentViewController(courses, animated:true, completion: nil)
-//    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "DepPressedSegue"){
+            
+            var path: NSIndexPath = self.depTableView.indexPathForSelectedRow()!
+            var rowSelected: NSInteger = path.row
+            
+            var cvc: CourseViewController = segue.destinationViewController as CourseViewController
+            
+            cvc.courses = department[rowSelected].getCourses()
+            cvc.department = department[rowSelected].name
+        }
+    }
+    
+    
+    
+    
+    
+    //override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        //let courses = UINavigationController()
+        //courses.
+        //courses.sourceType = department.getCourses()
+        //courses.delegate = self
+        
+        //presentViewController(courses, animated:true, completion: nil)
+    //}
     
 
 }
