@@ -10,18 +10,21 @@ import Foundation
 import UIKit
 
 class DepViewController: UITableViewController {
-    var department = [ Department(name: "compsci"),
-    Department(name: "Math")]
+    var department = [
+        Department(name: "CPSC"),
+        Department(name: "MATH")
+    ]
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //code here
         return department.count
     }
     
-//    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//        //code here
-//        
-//    }
+   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("DepViewCell", forIndexPath: indexPath) as UITableViewCell
+        let item = department[indexPath.row]
+        cell.textLabel?.text = item.name
+        return cell
+     }
 }
 
 
