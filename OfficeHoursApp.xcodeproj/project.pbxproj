@@ -13,6 +13,9 @@
 		2FA4D57F1AB3DCA300E1D326 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA4D57E1AB3DCA300E1D326 /* Images.xcassets */; };
 		2FA4D5821AB3DCA300E1D326 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FA4D5801AB3DCA300E1D326 /* LaunchScreen.xib */; };
 		2FA4D58E1AB3DCA300E1D326 /* OfficeHoursAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA4D58D1AB3DCA300E1D326 /* OfficeHoursAppTests.swift */; };
+		2FA4D5981AB3EC6100E1D326 /* Department.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA4D5971AB3EC6100E1D326 /* Department.swift */; };
+		2FA4D59E1AB3ED2A00E1D326 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA4D59D1AB3ED2A00E1D326 /* Course.swift */; };
+		2FA4D5A01AB3EDAB00E1D326 /* Instructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA4D59F1AB3EDAB00E1D326 /* Instructor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		2FA4D5871AB3DCA300E1D326 /* OfficeHoursAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OfficeHoursAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA4D58C1AB3DCA300E1D326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FA4D58D1AB3DCA300E1D326 /* OfficeHoursAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeHoursAppTests.swift; sourceTree = "<group>"; };
+		2FA4D5971AB3EC6100E1D326 /* Department.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Department.swift; sourceTree = "<group>"; };
+		2FA4D59D1AB3ED2A00E1D326 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		2FA4D59F1AB3EDAB00E1D326 /* Instructor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instructor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,9 @@
 				2FA4D57E1AB3DCA300E1D326 /* Images.xcassets */,
 				2FA4D5801AB3DCA300E1D326 /* LaunchScreen.xib */,
 				2FA4D5751AB3DCA300E1D326 /* Supporting Files */,
+				2FA4D5971AB3EC6100E1D326 /* Department.swift */,
+				2FA4D59D1AB3ED2A00E1D326 /* Course.swift */,
+				2FA4D59F1AB3EDAB00E1D326 /* Instructor.swift */,
 			);
 			path = OfficeHoursApp;
 			sourceTree = "<group>";
@@ -213,8 +222,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FA4D59E1AB3ED2A00E1D326 /* Course.swift in Sources */,
 				2FA4D57A1AB3DCA300E1D326 /* ViewController.swift in Sources */,
 				2FA4D5781AB3DCA300E1D326 /* AppDelegate.swift in Sources */,
+				2FA4D5A01AB3EDAB00E1D326 /* Instructor.swift in Sources */,
+				2FA4D5981AB3EC6100E1D326 /* Department.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

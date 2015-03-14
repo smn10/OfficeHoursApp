@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>66278237-3BE7-46C2-9523-FE4B6ECBA828</string>
+	<key>IDESourceControlProjectName</key>
+	<string>OfficeHoursApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D5BB639DBF2D7FDD64FA299F44E08BC7D6581722</key>
+		<string>https://github.com/smn10/OfficeHoursApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>OfficeHoursApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D5BB639DBF2D7FDD64FA299F44E08BC7D6581722</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/smn10/OfficeHoursApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D5BB639DBF2D7FDD64FA299F44E08BC7D6581722</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D5BB639DBF2D7FDD64FA299F44E08BC7D6581722</string>
+			<key>IDESourceControlWCCName</key>
+			<string>OfficeHoursApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
