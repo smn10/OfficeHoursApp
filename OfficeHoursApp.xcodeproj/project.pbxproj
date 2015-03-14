@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1843E4C81AB40EBA0078A223 /* DepNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843E4C71AB40EBA0078A223 /* DepNavController.swift */; };
 		185390691AB3FD8E003F4FA9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185390681AB3FD8E003F4FA9 /* UIKit.framework */; };
 		2FA4D5781AB3DCA300E1D326 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA4D5771AB3DCA300E1D326 /* AppDelegate.swift */; };
 		2FA4D57A1AB3DCA300E1D326 /* DepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA4D5791AB3DCA300E1D326 /* DepViewController.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1843E4C71AB40EBA0078A223 /* DepNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepNavController.swift; sourceTree = "<group>"; };
 		185390681AB3FD8E003F4FA9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2FA4D5721AB3DCA300E1D326 /* OfficeHoursApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OfficeHoursApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA4D5761AB3DCA300E1D326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			children = (
 				2FA4D5771AB3DCA300E1D326 /* AppDelegate.swift */,
 				2FA4D5791AB3DCA300E1D326 /* DepViewController.swift */,
+				1843E4C71AB40EBA0078A223 /* DepNavController.swift */,
 				2FA4D57B1AB3DCA300E1D326 /* Main.storyboard */,
 				2FA4D57E1AB3DCA300E1D326 /* Images.xcassets */,
 				2FA4D5801AB3DCA300E1D326 /* LaunchScreen.xib */,
@@ -229,6 +232,7 @@
 				2FA4D59E1AB3ED2A00E1D326 /* Course.swift in Sources */,
 				2FA4D57A1AB3DCA300E1D326 /* DepViewController.swift in Sources */,
 				2FA4D5781AB3DCA300E1D326 /* AppDelegate.swift in Sources */,
+				1843E4C81AB40EBA0078A223 /* DepNavController.swift in Sources */,
 				2FA4D5A01AB3EDAB00E1D326 /* Instructor.swift in Sources */,
 				2FA4D5981AB3EC6100E1D326 /* Department.swift in Sources */,
 			);
