@@ -1,91 +1,282 @@
-
-  {
-  "department": "CPSC",
-  "courses": [
-              {
-              "code": 110,
-              "instructors": [
-                              {
-                              "name": "Meghan Allen",
-                              "isProf": true,
-                              "time": "Mon 14:00",
-                              "location": "ICICS 123"
-                              },
-                              {
-                              "name": "Petr Cech",
-                              "isProf": false,
-                              "time": "Tue 11:00",
-                              "location": "ICICS 001"
-                              }
-                              ]
-              },
-              {
-              "code": 121,
-              "instructors": [
-                              {
-                              "name": "Giorgos Tsiknis",
-                              "isProf": true,
-                              "time": "Tue 14:00",
-                              "location": "ICICS 234"
-                              },
-                              {
-                              "name": "John Terry",
-                              "isProf": false,
-                              "time": "Wed 11:00",
-                              "location": "ICICS 026"
-                              }
-                              ]
-              },
-              {
-              "code": 210,
-              "instructors": [
-                              {
-                              "name": "Paul Carter",
-                              "isProf": true,
-                              "time": "Wed 14:00",
-                              "location": "ICICS 456"
-                              },
-                              {
-                              "name": "Frank Lampard",
-                              "isProf": false,
-                              "time": "Thu 11:00",
-                              "location": "ICICS 008"
-                              }
-                              ]
-              },
-              {
-              "code": 213,
-              "instructors": [
-                              {
-                              "name": "Mike Feeley",
-                              "isProf": true,
-                              "time": "Thu 14:00",
-                              "location": "ICICS 567"
-                              },
-                              {
-                              "name": "Didier Drogba",
-                              "isProf": false,
-                              "time": "Fri 11:00",
-                              "location": "ICICS 011"
-                              }
-                              ]
-              },
-              {
-              "code": 221,
-              "instructors": [
-                              {
-                              "name": "Alan Hu",
-                              "isProf": true,
-                              "time": "Fri 14:00",
-                              "location": "ICICS 678"
-                              },
-                              {
-                              "name": "Gianfranco Zola",
-                              "isProf": false,
-                              "time": "Mon 11:00",
-                              "location": "ICICS 025"
-                              }
-                              ]
-              }
-              ]
-  }
+{
+    "department": "CPSC",
+    "courses": [
+                {
+                "code": 110,
+                "instructors": [
+                                {
+                                "name": "Bill Aiello",
+                                "isProf": true,
+                                "time": "Mon 14:00-14:50, Fri 15:30-16:30",
+                                "location": "ICCS X139"
+                                },
+                                {
+                                "name": "Paul Carter",
+                                "isProf": true,
+                                "time": "Wed 10:30-11:30, Thur 14:00-15:00, Fri 16:00-17:00",
+                                "location": "ICCS 391"
+                                },
+                                {
+                                "name": "Meghan Allen",
+                                "isProf": true,
+                                "time": "Mon 13:00-14:00, Fri 12:00-13:00",
+                                "location": "ICCS 243"
+                                },
+                                {
+                                "name": "Karen",
+                                "isProf": false,
+                                "time": "Mon 13:00-14:30",
+                                "location": "LMRS 205"
+                                },
+                                {
+                                "name": "Andrew",
+                                "isProf": false,
+                                "time": "Mon 9:00-10:30",
+                                "location": "LMRS 205"
+                                },
+                                {
+                                "name": "Imelda",
+                                "isProf": false,
+                                "time": "Thur 14:00-15:30",
+                                "location": "LMRS 205"
+                                },
+                                {
+                                "name": "Karen",
+                                "isProf": false,
+                                "time": "Fri 13:00-14:30",
+                                "location": "LMRS 205"
+                                },
+                                {
+                                "name": "Kamil",
+                                "isProf": false,
+                                "time": "Sun 18:00-20:00",
+                                "location": "Place Vanier, Commonsblock"
+                                }
+                                ]
+                },
+                {
+                "code": 121,
+                "instructors": [
+                                {
+                                "name": "Kendra Cooper",
+                                "isProf": true,
+                                "time": "Fri 11:30-13:30, Sun 16:30-18:30",
+                                "location": "ICICS 235"
+                                },
+                                {
+                                "name": "Patrice Belleville",
+                                "isProf": true,
+                                "time": "Tue 10:30-11:30, Wed 15:30-16:30, Fri 10:30-11:30",
+                                "location": "ICICS 343"
+                                },
+                                {
+                                "name": "Henry",
+                                "isProf": false,
+                                "time": "Mon 10:00-11:00,",
+                                "location": "DLC4"
+                                },
+                                {
+                                "name": "Vaastav",
+                                "isProf": false,
+                                "time": "Mon 11:00-13:00, Fri 13:00-14:00",
+                                "location": "DLC4"
+                                },
+                                {
+                                "name": "Anya",
+                                "isProf": false,
+                                "time": "Mon 14:00-15:00, Tue 14:00-16:00",
+                                "location": "DLC4"
+                                },
+                                {
+                                "name": "Ernest",
+                                "isProf": false,
+                                "time": "Mon 15:30-16:30, Fri 13:00-14:00",
+                                "location": "DLC3"
+                                },
+                                {
+                                "name": "Sharon",
+                                "isProf": false,
+                                "time": "Tue 12:30-14:00, Fri 14:00-15:30",
+                                "location": "ICCS X139"
+                                },
+                                {
+                                "name": "James",
+                                "isProf": false,
+                                "time": "Tue 16:00-17:00, Wed 16:00-17:00",
+                                "location": "ICCS X139"
+                                },
+                                {
+                                "name": "Patty",
+                                "isProf": false,
+                                "time": "Wed 12:00-13:00, Fri 12:00-13:00",
+                                "location": "DLC2"
+                                },
+                                {
+                                "name": "Oliver",
+                                "isProf": false,
+                                "time": "Wed 13:00-14:00",
+                                "location": "DLC2"
+                                },
+                                {
+                                "name": "Jessica",
+                                "isProf": false,
+                                "time": "Wed 14:00-15:00, Thu 12:00-13:30",
+                                "location": "DLC3"
+                                },
+                                {
+                                "name": "Leslie",
+                                "isProf": false,
+                                "time": "Wed 15:00-16:00",
+                                "location": "DLC3"
+                                },
+                                {
+                                "name": "Kenard",
+                                "isProf": false,
+                                "time": "Thu 14:30-15:30",
+                                "location": "DLC4"
+                                },
+                                {
+                                "name": "Norman",
+                                "isProf": false,
+                                "time": " Fri 10:30-12:00",
+                                "location": "DLC2"
+                                }
+                                ]
+                },
+                {
+                "code": 210,
+                "instructors": [
+                                {
+                                "name": "Elisa Baniassad",
+                                "isProf": true,
+                                "time": "Mon 13:00-14:00",
+                                "location": "ICICS 329"
+                                },
+                                {
+                                "name": "Gail Murphy",
+                                "isProf": true,
+                                "time": "Fri 12:00-13:00",
+                                "location": "ICICS 305"
+                                },
+                                {
+                                "name": "Napon",
+                                "isProf": false,
+                                "time": "Mon 14:00-15:00, Wed 10:30-12:00",
+                                "location": "ICCS X141, X151, and DLC4"
+                                },
+                                {
+                                "name": "Bryan",
+                                "isProf": false,
+                                "time": "Mon 15:00-16:00",
+                                "location": "DLC4"
+                                },
+                                {
+                                "name": "Allsion",
+                                "isProf": false,
+                                "time": "Tue 10:00-11:30",
+                                "location": "DLC4"
+                                },
+                                {
+                                "name": "Vincent",
+                                "isProf": false,
+                                "time": "Wed 14:00-16:00, Thu 16:00-17:00",
+                                "location": "DLC4"
+                                },
+                                {
+                                "name": "William",
+                                "isProf": false,
+                                "time": "Thu 11:00-12:30",
+                                "location": "DLC4"
+                                },
+                                {
+                                "name": "Michael",
+                                "isProf": false,
+                                "time": "Fri 9:30-11:00",
+                                "location": "DLC4"
+                                }
+                                ]
+                },
+                {
+                "code": 213,
+                "instructors": [
+                                {
+                                "name": "Mike Feeley",
+                                "isProf": true,
+                                "time": "M 11:00-12:00, Tue 12:00-13:00",
+                                "location": "ICICS 393"
+                                },
+                                {
+                                "name": "Jordon",
+                                "isProf": false,
+                                "time": "Tue-Fri 17:00-18:00",
+                                "location": "DLC4"
+                                },
+                                {
+                                "name": "Kyle",
+                                "isProf": false,
+                                "time": "Mon 11:00-12:00, Tue 13:00-14:00",
+                                "location": "ICICS X151"
+                                },
+                                {
+                                "name": "Farzad",
+                                "isProf": false,
+                                "time": "By Request",
+                                "location": "N/A"
+                                }
+                                ]
+                },
+                {
+                "code": 221,
+                "instructors": [
+                                {
+                                "name": "Alan Hu",
+                                "isProf": true,
+                                "time": "Wed 11:00-12:00, Fri 11:00-12:00",
+                                "location": "ICICS 678"
+                                },
+                                {
+                                "name": "Hassan Khosravi",
+                                "isProf": true,
+                                "time": "Mon 15:00-16:00, Tue 11:00-12:00",
+                                "location": "ICICS 241"
+                                },
+                                {
+                                "name": "Brian",
+                                "isProf": false,
+                                "time": "Mon 12:00-13:00",
+                                "location": "ICICS X153"
+                                },
+                                {
+                                "name": "Justin",
+                                "isProf": false,
+                                "time": "Tue 16:00-17:00",
+                                "location": "DLC"
+                                },
+                                {
+                                "name": "Benny",
+                                "isProf": false,
+                                "time": "Wed 11:00-12:00",
+                                "location": "DLC"
+                                },
+                                {
+                                "name": "Daniel",
+                                "isProf": false,
+                                "time": "Thu 16:00-17:00",
+                                "location": "DLC"
+                                },
+                                {
+                                "name": "Lynsey",
+                                "isProf": false,
+                                "time": "Fri 11:00-12:00",
+                                "location": "DLC"
+                                },
+                                {
+                                "name": "Cathy",
+                                "isProf": false,
+                                "time": "Fri 12:00-13:00",
+                                "location": "DLC"
+                                }
+                                ]
+                }
+                ]
+}
