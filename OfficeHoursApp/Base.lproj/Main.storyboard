@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="T3H-n2-xov">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6JL-bM-duf">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -99,6 +99,48 @@
             </objects>
             <point key="canvasLocation" x="2786" y="997"/>
         </scene>
+        <!--Professors and TAs-->
+        <scene sceneID="iLY-Ea-g7J">
+            <objects>
+                <tableViewController id="Maw-cn-oi1" customClass="InsViewController" customModule="OfficeHoursApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="O79-ca-MiO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InsViewCell" textLabel="59X-ko-6Yi" style="IBUITableViewCellStyleDefault" id="Z5C-DY-WxY">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z5C-DY-WxY" id="rZw-dg-NHV">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="59X-ko-6Yi">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Maw-cn-oi1" id="OPd-Um-6TR"/>
+                            <outlet property="delegate" destination="Maw-cn-oi1" id="8si-Fe-mBa"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Professors and TAs" id="LCc-I3-AQW">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="AGA-qh-7Ae">
+                            <connections>
+                                <action selector="back:" destination="Maw-cn-oi1" id="0SK-YM-Dan"/>
+                                <segue destination="Iev-3j-ZDe" kind="presentation" id="I4w-iU-IKd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CcH-I5-Cc0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2786" y="1749"/>
+        </scene>
         <!--Departments-->
         <scene sceneID="uda-tl-Z86">
             <objects>
@@ -141,6 +183,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Frw-3W-tnw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2006" y="1009"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vRo-uM-Gro">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6JL-bM-duf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gQr-mx-xFa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Maw-cn-oi1" kind="relationship" relationship="rootViewController" id="nrQ-Bh-vDe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ETh-qI-Z0i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2006" y="1725"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

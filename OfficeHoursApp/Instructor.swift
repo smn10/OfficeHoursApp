@@ -10,14 +10,16 @@ import Foundation
 
 class Instructor: NSObject {
     let name: String
-    let isProf: Bool
-    let office: String
-    var hours: String
+    //let isProf: Bool
+    //let office: String
+    //var hours: String
     
-    init(name:String, isProf:Bool, office:String, hours:String) {
+    init(name:String
+        //,isProf:Bool, office:String, hours:String
+        ) {
         self.name = name
-        self.isProf = isProf
-        self.office = office
-        self.hours = hours
+       // self.isProf = isProf
+        //self.office = office
+        //self.hours = hours
     }
 }
