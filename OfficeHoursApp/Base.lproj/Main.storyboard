@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Iev-3j-ZDe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="T3H-n2-xov">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -30,7 +30,7 @@
                                     <accessibilityTraits key="traits" none="YES" staticText="YES"/>
                                 </accessibility>
                                 <connections>
-                                    <segue destination="Iev-3j-ZDe" kind="show" identifier="DepPressedSegue" id="1wc-LA-QRF"/>
+                                    <segue destination="vJn-sE-jiC" kind="show" identifier="DepPressedSegue" id="TDp-x8-NHz"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -55,7 +55,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k72-GI-gxS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2704" y="285"/>
+            <point key="canvasLocation" x="2754" y="267"/>
         </scene>
         <!--Courses-->
         <scene sceneID="TwZ-OP-k4a">
@@ -143,4 +143,7 @@
             <point key="canvasLocation" x="2006" y="1009"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="TDp-x8-NHz"/>
+    </inferredMetricsTieBreakers>
 </document>

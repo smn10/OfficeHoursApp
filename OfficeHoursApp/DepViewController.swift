@@ -11,24 +11,24 @@ import UIKit
 
 class DepViewController: UITableViewController, UINavigationControllerDelegate {
     
+    var departments = DepartmentList()
     
-    
-    var department = [
-        Department(name: "Computer Science", courses: [Course(code:101), Course(code: 110)]),
-        Department(name: "Mathematics", courses: [Course(code:100), Course(code:101)])
-    ]
-    
+//    var departments = [
+//        Department(name: "Computer Science", courses: [Course(code:101), Course(code: 110)]),
+//        Department(name: "Mathematics", courses: [Course(code:100), Course(code:101)])
+//    ]
+//    
     @IBOutlet var depTableView: UITableView!
     
     
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return department.count
+        return departments.departmentBase.count
     }
     
    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("DepViewCell", forIndexPath: indexPath) as UITableViewCell
-        let item = department[indexPath.row]
+        let item = departments.departmentBase[indexPath.row]
         cell.textLabel?.text = item.name
         return cell
      }
@@ -41,8 +41,9 @@ class DepViewController: UITableViewController, UINavigationControllerDelegate {
             
             var cvc: CourseViewController = segue.destinationViewController as CourseViewController
             
-            cvc.courses = department[rowSelected].getCourses()
-            cvc.department = department[rowSelected].name
+           cvc.depname = departments.departmentBase[rowSelected].name
+           cvc.courses = departments.departmentBase[rowSelected].getCourses()
+            
         }
     }
     
@@ -51,12 +52,12 @@ class DepViewController: UITableViewController, UINavigationControllerDelegate {
     
     
     //override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        //let courses = UINavigationController()
-        //courses.
-        //courses.sourceType = department.getCourses()
-        //courses.delegate = self
+//        let courses = UINavigationController()
+//        courses.sourceType = departments.getCourses()
+//        courses.delegate = self
         
-        //presentViewController(courses, animated:true, completion: nil)
+//        presentViewController(courses, animated:true, completion: nil)
+    //    println("test")
     //}
     
 

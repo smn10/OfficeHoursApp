@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class DepartmentList: NSObject {
-    var departmentBase = [  // List of all departments
+    let departmentBase = [  // List of all departments
         Department(name: "Computer Science", courses: [
             Course(code: 110),
             Course(code: 121)]),
@@ -20,8 +20,13 @@ class DepartmentList: NSObject {
     ]
     
     
-    func findDepartment(name: String){
-        for 
-
+    
+    func findDepartment(name: String) -> Department?{
+        for i in 0...(departmentBase.count - 1) {
+            if (departmentBase[i] == name){
+                return departmentBase[i]
+            }
+        }
+        return nil
     }
 }
