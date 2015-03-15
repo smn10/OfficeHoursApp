@@ -21,4 +21,5 @@ class JSONHelper: NSObject {
         
         return jsonDict
     }
+    
 }

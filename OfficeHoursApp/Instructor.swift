@@ -21,6 +21,14 @@ class Instructor: NSObject {
         self.hours = dict.valueForKey("time") as String
     }
     
+    override init(){
+        name = "Shaun"
+        isProf = true
+        office = "Cardboard Box"
+        hours = "never"
+        
+    }
+    
     func getName() -> String {
         return self.name
     }

@@ -13,14 +13,7 @@ class DepViewController: UITableViewController, UINavigationControllerDelegate {
     
     var department = [Department()]
     
-//    var departments = [
-//        Department(name: "Computer Science", courses: [Course(code:101), Course(code: 110)]),
-//        Department(name: "Mathematics", courses: [Course(code:100), Course(code:101)])
-//    ]
-//    
     @IBOutlet var depTableView: UITableView!
-    
-    
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return department.count
@@ -41,24 +34,10 @@ class DepViewController: UITableViewController, UINavigationControllerDelegate {
             
             var cvc: CourseViewController = segue.destinationViewController as CourseViewController
             
-           //cvc.depname = department[rowSelected].name
            cvc.courses = department[rowSelected].getCourses()
             
         }
     }
-    
-    
-    
-    
-    
-    //override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        let courses = UINavigationController()
-//        courses.sourceType = departments.getCourses()
-//        courses.delegate = self
-        
-//        presentViewController(courses, animated:true, completion: nil)
-    //    println("test")
-    //}
     
 
 }

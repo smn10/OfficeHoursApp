@@ -28,4 +28,14 @@ class InsViewController: UITableViewController, UINavigationControllerDelegate {
         self.navigationController?.popViewControllerAnimated(true)
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "InsPressedSegue"){
+            var path: NSIndexPath = self.tableView.indexPathForSelectedRow()!
+            var rowSelected: NSInteger = path.row
+            var dvc: DetailViewController = segue.destinationViewController as DetailViewController
+            
+            dvc.instructor = instructors[rowSelected]
+    }
+    }
+    
 }
