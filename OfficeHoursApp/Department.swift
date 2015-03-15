@@ -9,21 +9,26 @@
 import Foundation
 
 class Department: NSObject {
+    var dict = JSONHelper.readJSON()
     let name: String
-    //let building: String
-    var courses: [Course]
+    var courses: [Course] = []
     
-    init (name: String, courses:[Course]) {
-        self.name = name
-        //  self.building = building
-        self.courses = courses
+    override init () {
+        self.name = dict.valueForKey("department") as String
+        var courseList: NSArray? = (dict["courses"] as NSArray)
+        var i: Int
+        for (i = 0; i < courseList!.count; i++) {
+            self.courses.append(Course(dict: courseList![i] as NSDictionary))
+        }
+    }
+    
+    func getDepartmentName() -> String {
+        return self.name
     }
     
     func getCourses() -> [Course]{
-        
         return self.courses
     }
-    
     
 }
 

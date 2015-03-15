@@ -10,8 +10,7 @@ import Foundation
 import UIKit
 
 class CourseViewController: UITableViewController {
-    var depname = ""
-    let departments = DepartmentList() //
+    
     var courses: [Course] = [Course]()
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -26,11 +25,11 @@ class CourseViewController: UITableViewController {
     }
     @IBAction func back(sender: AnyObject) {
              dismissViewControllerAnimated(true, completion: nil)
-        }
-    
-    func fetchCourseData(departmentName:String){
-        let currentDep:Department = departments.findDepartment(departmentName)!
-        self.courses = currentDep.getCourses()
     }
+    
+    //func fetchCourseData(departmentName:String){
+        //let currentDep:Department = departments.findDepartment(departmentName)!
+        //self.courses = currentDep.getCourses()
+    //}
 }
 

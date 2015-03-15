@@ -10,10 +10,24 @@ import Foundation
 
 class Course: NSObject {
     let code: Int
-    //var instructors: [Instructor]
+    var instructors: [Instructor] = []
     
-    init (code: Int) {
-        self.code = code
+    init (dict: NSDictionary) {
+        self.code = dict.valueForKey("code") as Int
         //self.instructors = instructors
+        var instructorList: NSArray? = (dict["instructors"] as NSArray)
+        var i: Int
+        for (i = 0; i < instructorList!.count; i++) {
+            self.instructors.append(Instructor(dict: instructorList![i] as NSDictionary))
+        }
     }
+    
+    func getCode() -> Int {
+        return code
+    }
+    
+    func getInstructors() -> [Instructor] {
+        return instructors
+    }
+    
 }

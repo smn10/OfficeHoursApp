@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		1843E4C81AB40EBA0078A223 /* DepNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843E4C71AB40EBA0078A223 /* DepNavController.swift */; };
 		1843E4CA1AB4B9310078A223 /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843E4C91AB4B9310078A223 /* CourseViewController.swift */; };
-		1843E4CC1AB4EAA50078A223 /* DepartmentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843E4CB1AB4EAA50078A223 /* DepartmentList.swift */; };
 		1843E4CE1AB50FC50078A223 /* InsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843E4CD1AB50FC50078A223 /* InsViewController.swift */; };
 		185390691AB3FD8E003F4FA9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185390681AB3FD8E003F4FA9 /* UIKit.framework */; };
+		2F2A2CEB1AB518F900363015 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2A2CE91AB518F900363015 /* JSONHelper.swift */; };
+		2F2A2CEC1AB518F900363015 /* OfficeHoursData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F2A2CEA1AB518F900363015 /* OfficeHoursData.json */; };
 		2FA4D5781AB3DCA300E1D326 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA4D5771AB3DCA300E1D326 /* AppDelegate.swift */; };
 		2FA4D57A1AB3DCA300E1D326 /* DepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA4D5791AB3DCA300E1D326 /* DepViewController.swift */; };
 		2FA4D57D1AB3DCA300E1D326 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA4D57B1AB3DCA300E1D326 /* Main.storyboard */; };
@@ -36,9 +37,10 @@
 /* Begin PBXFileReference section */
 		1843E4C71AB40EBA0078A223 /* DepNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepNavController.swift; sourceTree = "<group>"; };
 		1843E4C91AB4B9310078A223 /* CourseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
-		1843E4CB1AB4EAA50078A223 /* DepartmentList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartmentList.swift; sourceTree = "<group>"; };
 		1843E4CD1AB50FC50078A223 /* InsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsViewController.swift; sourceTree = "<group>"; };
 		185390681AB3FD8E003F4FA9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2F2A2CE91AB518F900363015 /* JSONHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
+		2F2A2CEA1AB518F900363015 /* OfficeHoursData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OfficeHoursData.json; sourceTree = "<group>"; };
 		2FA4D5721AB3DCA300E1D326 /* OfficeHoursApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OfficeHoursApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA4D5761AB3DCA300E1D326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FA4D5771AB3DCA300E1D326 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,8 @@
 		2FA4D5741AB3DCA300E1D326 /* OfficeHoursApp */ = {
 			isa = PBXGroup;
 			children = (
+				2F2A2CE91AB518F900363015 /* JSONHelper.swift */,
+				2F2A2CEA1AB518F900363015 /* OfficeHoursData.json */,
 				2FA4D5771AB3DCA300E1D326 /* AppDelegate.swift */,
 				2FA4D5791AB3DCA300E1D326 /* DepViewController.swift */,
 				1843E4C71AB40EBA0078A223 /* DepNavController.swift */,
@@ -104,7 +108,6 @@
 				2FA4D5801AB3DCA300E1D326 /* LaunchScreen.xib */,
 				2FA4D5751AB3DCA300E1D326 /* Supporting Files */,
 				2FA4D5971AB3EC6100E1D326 /* Department.swift */,
-				1843E4CB1AB4EAA50078A223 /* DepartmentList.swift */,
 				2FA4D59D1AB3ED2A00E1D326 /* Course.swift */,
 				2FA4D59F1AB3EDAB00E1D326 /* Instructor.swift */,
 				1843E4CD1AB50FC50078A223 /* InsViewController.swift */,
@@ -221,6 +224,7 @@
 				2FA4D57D1AB3DCA300E1D326 /* Main.storyboard in Resources */,
 				2FA4D5821AB3DCA300E1D326 /* LaunchScreen.xib in Resources */,
 				2FA4D57F1AB3DCA300E1D326 /* Images.xcassets in Resources */,
+				2F2A2CEC1AB518F900363015 /* OfficeHoursData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +250,7 @@
 				2FA4D5A01AB3EDAB00E1D326 /* Instructor.swift in Sources */,
 				2FA4D5981AB3EC6100E1D326 /* Department.swift in Sources */,
 				1843E4CA1AB4B9310078A223 /* CourseViewController.swift in Sources */,
-				1843E4CC1AB4EAA50078A223 /* DepartmentList.swift in Sources */,
+				2F2A2CEB1AB518F900363015 /* JSONHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

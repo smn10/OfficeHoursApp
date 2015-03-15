@@ -1,0 +1,91 @@
+
+  {
+  "department": "CPSC",
+  "courses": [
+              {
+              "code": 110,
+              "instructors": [
+                              {
+                              "name": "Meghan Allen",
+                              "isProf": true,
+                              "time": "Mon 14:00",
+                              "location": "ICICS 123"
+                              },
+                              {
+                              "name": "Petr Cech",
+                              "isProf": false,
+                              "time": "Tue 11:00",
+                              "location": "ICICS 001"
+                              }
+                              ]
+              },
+              {
+              "code": 121,
+              "instructors": [
+                              {
+                              "name": "Giorgos Tsiknis",
+                              "isProf": true,
+                              "time": "Tue 14:00",
+                              "location": "ICICS 234"
+                              },
+                              {
+                              "name": "John Terry",
+                              "isProf": false,
+                              "time": "Wed 11:00",
+                              "location": "ICICS 026"
+                              }
+                              ]
+              },
+              {
+              "code": 210,
+              "instructors": [
+                              {
+                              "name": "Paul Carter",
+                              "isProf": true,
+                              "time": "Wed 14:00",
+                              "location": "ICICS 456"
+                              },
+                              {
+                              "name": "Frank Lampard",
+                              "isProf": false,
+                              "time": "Thu 11:00",
+                              "location": "ICICS 008"
+                              }
+                              ]
+              },
+              {
+              "code": 213,
+              "instructors": [
+                              {
+                              "name": "Mike Feeley",
+                              "isProf": true,
+                              "time": "Thu 14:00",
+                              "location": "ICICS 567"
+                              },
+                              {
+                              "name": "Didier Drogba",
+                              "isProf": false,
+                              "time": "Fri 11:00",
+                              "location": "ICICS 011"
+                              }
+                              ]
+              },
+              {
+              "code": 221,
+              "instructors": [
+                              {
+                              "name": "Alan Hu",
+                              "isProf": true,
+                              "time": "Fri 14:00",
+                              "location": "ICICS 678"
+                              },
+                              {
+                              "name": "Gianfranco Zola",
+                              "isProf": false,
+                              "time": "Mon 11:00",
+                              "location": "ICICS 025"
+                              }
+                              ]
+              }
+              ]
+  }

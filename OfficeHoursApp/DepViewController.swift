@@ -11,7 +11,7 @@ import UIKit
 
 class DepViewController: UITableViewController, UINavigationControllerDelegate {
     
-    var departments = DepartmentList()
+    var department = [Department()]
     
 //    var departments = [
 //        Department(name: "Computer Science", courses: [Course(code:101), Course(code: 110)]),
@@ -23,26 +23,26 @@ class DepViewController: UITableViewController, UINavigationControllerDelegate {
     
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return departments.departmentBase.count
+        return department.count
     }
     
    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("DepViewCell", forIndexPath: indexPath) as UITableViewCell
-        let item = departments.departmentBase[indexPath.row]
+        let item = department[indexPath.row]
         cell.textLabel?.text = item.name
         return cell
      }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if (segue.identifier == "DepPressedSegue"){
+        if (segue.identifier == "DepPressedSegue"){    
             
             var path: NSIndexPath = self.depTableView.indexPathForSelectedRow()!
             var rowSelected: NSInteger = path.row
             
             var cvc: CourseViewController = segue.destinationViewController as CourseViewController
             
-           cvc.depname = departments.departmentBase[rowSelected].name
-           cvc.courses = departments.departmentBase[rowSelected].getCourses()
+           //cvc.depname = department[rowSelected].name
+           cvc.courses = department[rowSelected].getCourses()
             
         }
     }

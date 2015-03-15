@@ -10,16 +10,30 @@ import Foundation
 
 class Instructor: NSObject {
     let name: String
-    //let isProf: Bool
-    //let office: String
-    //var hours: String
+    let isProf: Bool
+    let office: String
+    let hours: String
     
-    init(name:String
-        //,isProf:Bool, office:String, hours:String
-        ) {
-        self.name = name
-       // self.isProf = isProf
-        //self.office = office
-        //self.hours = hours
+    init(dict: NSDictionary) {
+        self.name = dict.valueForKey("name") as String
+        self.isProf = dict.valueForKey("isProf") as Bool
+        self.office = dict.valueForKey("location") as String
+        self.hours = dict.valueForKey("time") as String
+    }
+    
+    func getName() -> String {
+        return self.name
+    }
+    
+    func getIsProf() -> Bool {
+        return self.isProf
+    }
+    
+    func getOffice() -> String {
+        return self.office
+    }
+    
+    func getHours() -> String {
+        return self.hours
     }
 }
