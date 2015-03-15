@@ -23,11 +23,11 @@ class Course: NSObject {
     }
     
     func getCode() -> Int {
-        return code
+        return self.code
     }
     
     func getInstructors() -> [Instructor] {
-        return instructors
+        return self.instructors
     }
     
 }
