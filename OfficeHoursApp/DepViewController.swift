@@ -11,7 +11,7 @@ import UIKit
 
 class DepViewController: UITableViewController, UINavigationControllerDelegate {
     
-    var department = [Department()]
+    var department = JSONHelper.getDepartments()
     
     @IBOutlet var depTableView: UITableView!
     

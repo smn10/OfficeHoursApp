@@ -14,7 +14,6 @@ class Course: NSObject {
     
     init (dict: NSDictionary) {
         self.code = dict.valueForKey("code") as Int
-        //self.instructors = instructors
         var instructorList: NSArray? = (dict["instructors"] as NSArray)
         var i: Int
         for (i = 0; i < instructorList!.count; i++) {

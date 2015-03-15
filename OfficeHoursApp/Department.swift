@@ -13,7 +13,7 @@ class Department: NSObject {
     let name: String
     var courses: [Course] = []
     
-    override init () {
+    init (dict: NSDictionary) {
         self.name = dict.valueForKey("department") as String
         var courseList: NSArray? = (dict["courses"] as NSArray)
         var i: Int
