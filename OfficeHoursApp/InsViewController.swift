@@ -23,8 +23,9 @@ class InsViewController: UITableViewController, UINavigationControllerDelegate {
         cell.textLabel?.text = String(item.name)
         return cell
     }
+    
     @IBAction func back(sender: AnyObject){
-        dismissViewControllerAnimated(true, completion: nil)
+        self.navigationController?.popViewControllerAnimated(true)
     }
     
 }

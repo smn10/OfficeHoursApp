@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6JL-bM-duf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="T3H-n2-xov">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DepViewCell" textLabel="rgC-OD-8nf" style="IBUITableViewCellStyleDefault" id="S3r-Kn-JOx">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="DepViewCell" textLabel="rgC-OD-8nf" style="IBUITableViewCellStyleDefault" id="S3r-Kn-JOx">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S3r-Kn-JOx" id="kc4-Rv-Juf">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -66,7 +66,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CourseViewCell" textLabel="rzy-iP-yYS" style="IBUITableViewCellStyleDefault" id="Zwl-5H-spZ">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CourseViewCell" textLabel="rzy-iP-yYS" style="IBUITableViewCellStyleDefault" id="Zwl-5H-spZ">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zwl-5H-spZ" id="YA2-dC-RH3">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -93,7 +93,6 @@
                         <barButtonItem key="leftBarButtonItem" title="Back" id="AMA-H1-pGm">
                             <connections>
                                 <action selector="back:" destination="vJn-sE-jiC" id="Zw5-Yh-xaG"/>
-                                <segue destination="T3H-n2-xov" kind="presentation" id="Yl6-Zh-R5v"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -115,7 +114,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InsViewCell" textLabel="59X-ko-6Yi" style="IBUITableViewCellStyleDefault" id="Z5C-DY-WxY">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="InsViewCell" textLabel="59X-ko-6Yi" style="IBUITableViewCellStyleDefault" id="Z5C-DY-WxY">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z5C-DY-WxY" id="rZw-dg-NHV">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -138,15 +137,14 @@
                     <navigationItem key="navigationItem" title="Professors and TAs" id="LCc-I3-AQW">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="AGA-qh-7Ae">
                             <connections>
-                                <action selector="back:" destination="Maw-cn-oi1" id="0SK-YM-Dan"/>
-                                <segue destination="Iev-3j-ZDe" kind="presentation" id="I4w-iU-IKd"/>
+                                <action selector="back:" destination="Maw-cn-oi1" id="B1g-XZ-mUy"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CcH-I5-Cc0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2786" y="1749"/>
+            <point key="canvasLocation" x="2786" y="1725"/>
         </scene>
         <!--Departments-->
         <scene sceneID="uda-tl-Z86">
@@ -170,48 +168,5 @@
             </objects>
             <point key="canvasLocation" x="1959" y="305"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Agt-mH-osu">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Iev-3j-ZDe" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hd8-xJ-ofa">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="vJn-sE-jiC" kind="relationship" relationship="rootViewController" id="jPK-01-rXz"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Frw-3W-tnw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1998" y="1105"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="vRo-uM-Gro">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6JL-bM-duf" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gQr-mx-xFa">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Maw-cn-oi1" kind="relationship" relationship="rootViewController" id="nrQ-Bh-vDe"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ETh-qI-Z0i" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2006" y="1725"/>
-        </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="FXc-Lk-eOh"/>
-        <segue reference="jPK-01-rXz"/>
-    </inferredMetricsTieBreakers>
 </document>

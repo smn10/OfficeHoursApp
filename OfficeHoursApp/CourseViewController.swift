@@ -26,8 +26,9 @@ class CourseViewController: UITableViewController, UINavigationControllerDelegat
         cell.textLabel?.text = String(item.code)
         return cell
     }
+    
     @IBAction func back(sender: AnyObject) {
-             dismissViewControllerAnimated(true, completion: nil)
+             self.navigationController?.popViewControllerAnimated(true)
     }
     
     //func fetchCourseData(departmentName:String){
