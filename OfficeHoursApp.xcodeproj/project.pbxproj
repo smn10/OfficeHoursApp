@@ -10,11 +10,10 @@
 		1843E4C81AB40EBA0078A223 /* DepNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843E4C71AB40EBA0078A223 /* DepNavController.swift */; };
 		1843E4CA1AB4B9310078A223 /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843E4C91AB4B9310078A223 /* CourseViewController.swift */; };
 		1843E4CE1AB50FC50078A223 /* InsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843E4CD1AB50FC50078A223 /* InsViewController.swift */; };
-		1849DC661AB549A00098D50E /* logoUBC.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1849DC651AB549A00098D50E /* logoUBC.gif */; };
-		1849DC681AB54B820098D50E /* icon175x175.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1849DC671AB54B820098D50E /* icon175x175.jpeg */; };
 		1849DC701AB54FBC0098D50E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1849DC6F1AB54FBC0098D50E /* Images.xcassets */; };
 		1849DC721AB550F20098D50E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1849DC711AB550F20098D50E /* DetailViewController.swift */; };
 		185390691AB3FD8E003F4FA9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185390681AB3FD8E003F4FA9 /* UIKit.framework */; };
+		2F1CF3D21AB57C37002E1FEF /* logoUBC.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2F1CF3D01AB57C37002E1FEF /* logoUBC.gif */; };
 		2F2A2CEB1AB518F900363015 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2A2CE91AB518F900363015 /* JSONHelper.swift */; };
 		2F2A2CEC1AB518F900363015 /* OfficeHoursData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F2A2CEA1AB518F900363015 /* OfficeHoursData.json */; };
 		2FA4D5781AB3DCA300E1D326 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA4D5771AB3DCA300E1D326 /* AppDelegate.swift */; };
@@ -41,14 +40,13 @@
 		1843E4C71AB40EBA0078A223 /* DepNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepNavController.swift; sourceTree = "<group>"; };
 		1843E4C91AB4B9310078A223 /* CourseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
 		1843E4CD1AB50FC50078A223 /* InsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsViewController.swift; sourceTree = "<group>"; };
-		1849DC651AB549A00098D50E /* logoUBC.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = logoUBC.gif; path = ../../../Downloads/logoUBC.gif; sourceTree = "<group>"; };
-		1849DC671AB54B820098D50E /* icon175x175.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = icon175x175.jpeg; path = ../../../Downloads/icon175x175.jpeg; sourceTree = "<group>"; };
 		1849DC6F1AB54FBC0098D50E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1849DC711AB550F20098D50E /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		185390681AB3FD8E003F4FA9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2F1CF3D01AB57C37002E1FEF /* logoUBC.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logoUBC.gif; sourceTree = "<group>"; };
 		2F2A2CE91AB518F900363015 /* JSONHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
 		2F2A2CEA1AB518F900363015 /* OfficeHoursData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OfficeHoursData.json; sourceTree = "<group>"; };
-		2FA4D5721AB3DCA300E1D326 /* OfficeHoursApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OfficeHoursApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FA4D5721AB3DCA300E1D326 /* Office Hours.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Office Hours.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA4D5761AB3DCA300E1D326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FA4D5771AB3DCA300E1D326 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FA4D5791AB3DCA300E1D326 /* DepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +58,7 @@
 		2FA4D5971AB3EC6100E1D326 /* Department.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Department.swift; sourceTree = "<group>"; };
 		2FA4D59D1AB3ED2A00E1D326 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		2FA4D59F1AB3EDAB00E1D326 /* Instructor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instructor.swift; sourceTree = "<group>"; };
+		2FFA18AD1AB6B4890056355F /* OfficeHoursApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = OfficeHoursApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +93,7 @@
 		2FA4D5731AB3DCA300E1D326 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2FA4D5721AB3DCA300E1D326 /* OfficeHoursApp.app */,
+				2FA4D5721AB3DCA300E1D326 /* Office Hours.app */,
 				2FA4D5871AB3DCA300E1D326 /* OfficeHoursAppTests.xctest */,
 			);
 			name = Products;
@@ -103,21 +102,21 @@
 		2FA4D5741AB3DCA300E1D326 /* OfficeHoursApp */ = {
 			isa = PBXGroup;
 			children = (
+				2FFA18AD1AB6B4890056355F /* OfficeHoursApp.entitlements */,
 				2F2A2CE91AB518F900363015 /* JSONHelper.swift */,
 				2F2A2CEA1AB518F900363015 /* OfficeHoursData.json */,
 				2FA4D5771AB3DCA300E1D326 /* AppDelegate.swift */,
 				2FA4D5791AB3DCA300E1D326 /* DepViewController.swift */,
 				1843E4C71AB40EBA0078A223 /* DepNavController.swift */,
+				2F1CF3D01AB57C37002E1FEF /* logoUBC.gif */,
 				2FA4D57B1AB3DCA300E1D326 /* Main.storyboard */,
 				1849DC711AB550F20098D50E /* DetailViewController.swift */,
 				1843E4C91AB4B9310078A223 /* CourseViewController.swift */,
-				1849DC671AB54B820098D50E /* icon175x175.jpeg */,
 				2FA4D5801AB3DCA300E1D326 /* LaunchScreen.xib */,
 				2FA4D5751AB3DCA300E1D326 /* Supporting Files */,
 				2FA4D5971AB3EC6100E1D326 /* Department.swift */,
 				2FA4D59D1AB3ED2A00E1D326 /* Course.swift */,
 				2FA4D59F1AB3EDAB00E1D326 /* Instructor.swift */,
-				1849DC651AB549A00098D50E /* logoUBC.gif */,
 				1843E4CD1AB50FC50078A223 /* InsViewController.swift */,
 				1849DC6F1AB54FBC0098D50E /* Images.xcassets */,
 			);
@@ -166,7 +165,7 @@
 			);
 			name = OfficeHoursApp;
 			productName = OfficeHoursApp;
-			productReference = 2FA4D5721AB3DCA300E1D326 /* OfficeHoursApp.app */;
+			productReference = 2FA4D5721AB3DCA300E1D326 /* Office Hours.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2FA4D5861AB3DCA300E1D326 /* OfficeHoursAppTests */ = {
@@ -199,6 +198,23 @@
 					2FA4D5711AB3DCA300E1D326 = {
 						CreatedOnToolsVersion = 6.2;
 						DevelopmentTeam = 2S3D8J8M3T;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
 					};
 					2FA4D5861AB3DCA300E1D326 = {
 						CreatedOnToolsVersion = 6.2;
@@ -231,11 +247,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FA4D57D1AB3DCA300E1D326 /* Main.storyboard in Resources */,
-				1849DC681AB54B820098D50E /* icon175x175.jpeg in Resources */,
 				2FA4D5821AB3DCA300E1D326 /* LaunchScreen.xib in Resources */,
 				1849DC701AB54FBC0098D50E /* Images.xcassets in Resources */,
+				2F1CF3D21AB57C37002E1FEF /* logoUBC.gif in Resources */,
 				2F2A2CEC1AB518F900363015 /* OfficeHoursData.json in Resources */,
-				1849DC661AB549A00098D50E /* logoUBC.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,7 +407,7 @@
 				INFOPLIST_FILE = OfficeHoursApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Office Hours";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -406,7 +421,7 @@
 				INFOPLIST_FILE = OfficeHoursApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Office Hours";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

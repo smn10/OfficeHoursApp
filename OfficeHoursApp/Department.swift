@@ -23,7 +23,7 @@ class Department: NSObject {
     }
     
     func getDepartmentName() -> String {
-        return self.name
+        return self.name     
     }
     
     func getCourses() -> [Course]{
